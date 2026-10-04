@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "dataset_dir": "data/ETHUSDT",
+  "interval": "4h",
+  "history_start": "2023-01-01",
+  "folds": [
+    {
+      "name": "2024-A",
+      "start": "2024-01-01",
+      "end": "2024-05-01"
+    },
+    {
+      "name": "2024-B",
+      "start": "2024-05-01",
+      "end": "2024-09-01"
+    },
+    {
+      "name": "2024-C",
+      "start": "2024-09-01",
+      "end": "2025-01-01"
+    }
+  ],
+  "fee_bps": 5,
+  "slippage_bps": 2,
+  "min_trades": 30,
+  "min_positive_folds": 2
+}

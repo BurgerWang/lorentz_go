@@ -1,0 +1,473 @@
+{
+  "schema_version": 1,
+  "dataset_dir": "data/ETHUSDT",
+  "interval": "1h",
+  "history_start": "2023-01-01",
+  "fee_bps": 5,
+  "slippage_bps": 2,
+  "baseline": {
+    "schema_version": 5,
+    "classic": {
+      "algorithm": "original-online",
+      "source": "hlc3",
+      "neighbors": 63,
+      "max_bars_back": 2000,
+      "feature_count": 4,
+      "features": [
+        {
+          "name": "ADX",
+          "a": 20,
+          "b": 1
+        },
+        {
+          "name": "RSI",
+          "a": 18,
+          "b": 1
+        },
+        {
+          "name": "CCI",
+          "a": 16,
+          "b": 7
+        },
+        {
+          "name": "ADX",
+          "a": 21,
+          "b": 1
+        },
+        {
+          "name": "RSI",
+          "a": 9,
+          "b": 1
+        }
+      ],
+      "include_full_history": false,
+      "use_volatility_filter": false,
+      "use_regime_filter": false,
+      "use_adx_filter": true,
+      "regime_threshold": -0.1,
+      "adx_threshold": 10,
+      "use_ema_filter": true,
+      "ema_period": 110,
+      "use_sma_filter": false,
+      "sma_period": 200,
+      "use_kernel_filter": true,
+      "kernel_smoothing": true,
+      "kernel_h": 21,
+      "kernel_r": 11.75,
+      "kernel_x": 23,
+      "kernel_lag": 1,
+      "use_dynamic_exits": false,
+      "min_vote_fraction": 0,
+      "sample_stride": 4
+    },
+    "envelope_enabled": true,
+    "envelope": {
+      "h": 8,
+      "r": 8,
+      "x": 25,
+      "atr_length": 60,
+      "near": 1.5,
+      "far": 8
+    },
+    "daily": {
+      "enabled": false,
+      "h": 8,
+      "r": 8,
+      "x": 25,
+      "history_start": "2020-01-01"
+    },
+    "entry_mode": "main",
+    "pullback": {
+      "enabled": false,
+      "max_wait_bars": 24
+    },
+    "classifier": {
+      "family": "classic-extended",
+      "feature_group": {
+        "name": "classic",
+        "features": [
+          {
+            "name": "ADX",
+            "a": 20,
+            "b": 1,
+            "normalization": "legacy",
+            "window": 0
+          },
+          {
+            "name": "RSI",
+            "a": 18,
+            "b": 1,
+            "normalization": "legacy",
+            "window": 0
+          },
+          {
+            "name": "CCI",
+            "a": 16,
+            "b": 7,
+            "normalization": "legacy",
+            "window": 0
+          },
+          {
+            "name": "ADX",
+            "a": 21,
+            "b": 1,
+            "normalization": "legacy",
+            "window": 0
+          }
+        ]
+      }
+    },
+    "exit": {
+      "policy": "signals",
+      "max_hold_bars": 4
+    },
+    "risk": {
+      "enabled": false,
+      "atr_period": 14,
+      "atr_multiplier": 2,
+      "trail": false,
+      "trail_multiplier": 2,
+      "breakeven_r": 0
+    },
+    "model": {
+      "distance": "lorentzian",
+      "vote_weight": "equal",
+      "distance_epsilon": 1e-09,
+      "vote_half_life": 0,
+      "rank_half_life": 0
+    }
+  },
+  "candidates": [
+    {
+      "name": "classic-rvol",
+      "config": {
+        "schema_version": 5,
+        "classic": {
+          "algorithm": "original-online",
+          "source": "hlc3",
+          "neighbors": 63,
+          "max_bars_back": 2000,
+          "feature_count": 4,
+          "features": [
+            {
+              "name": "ADX",
+              "a": 20,
+              "b": 1
+            },
+            {
+              "name": "RSI",
+              "a": 18,
+              "b": 1
+            },
+            {
+              "name": "CCI",
+              "a": 16,
+              "b": 7
+            },
+            {
+              "name": "ADX",
+              "a": 21,
+              "b": 1
+            },
+            {
+              "name": "RSI",
+              "a": 9,
+              "b": 1
+            }
+          ],
+          "include_full_history": false,
+          "use_volatility_filter": false,
+          "use_regime_filter": false,
+          "use_adx_filter": true,
+          "regime_threshold": -0.1,
+          "adx_threshold": 10,
+          "use_ema_filter": true,
+          "ema_period": 110,
+          "use_sma_filter": false,
+          "sma_period": 200,
+          "use_kernel_filter": true,
+          "kernel_smoothing": true,
+          "kernel_h": 21,
+          "kernel_r": 11.75,
+          "kernel_x": 23,
+          "kernel_lag": 1,
+          "use_dynamic_exits": false,
+          "min_vote_fraction": 0,
+          "sample_stride": 4
+        },
+        "envelope_enabled": true,
+        "envelope": {
+          "h": 8,
+          "r": 8,
+          "x": 25,
+          "atr_length": 60,
+          "near": 1.5,
+          "far": 8
+        },
+        "daily": {
+          "enabled": false,
+          "h": 8,
+          "r": 8,
+          "x": 25,
+          "history_start": "2020-01-01"
+        },
+        "entry_mode": "main",
+        "pullback": {
+          "enabled": false,
+          "max_wait_bars": 24
+        },
+        "classifier": {
+          "family": "classic-extended",
+          "feature_group": {
+            "name": "classic-rvol",
+            "features": [
+              {
+                "name": "ADX",
+                "a": 20,
+                "b": 1,
+                "normalization": "legacy",
+                "window": 0
+              },
+              {
+                "name": "RSI",
+                "a": 18,
+                "b": 1,
+                "normalization": "legacy",
+                "window": 0
+              },
+              {
+                "name": "CCI",
+                "a": 16,
+                "b": 7,
+                "normalization": "legacy",
+                "window": 0
+              },
+              {
+                "name": "ADX",
+                "a": 21,
+                "b": 1,
+                "normalization": "legacy",
+                "window": 0
+              },
+              {
+                "name": "RVOL",
+                "a": 14,
+                "b": 1,
+                "normalization": "rolling-z",
+                "window": 20
+              }
+            ]
+          }
+        },
+        "exit": {
+          "policy": "signals",
+          "max_hold_bars": 4
+        },
+        "risk": {
+          "enabled": false,
+          "atr_period": 14,
+          "atr_multiplier": 2,
+          "trail": false,
+          "trail_multiplier": 2,
+          "breakeven_r": 0
+        },
+        "model": {
+          "distance": "lorentzian",
+          "vote_weight": "equal",
+          "distance_epsilon": 1e-09,
+          "vote_half_life": 0,
+          "rank_half_life": 0
+        }
+      }
+    },
+    {
+      "name": "aligned-euclidean",
+      "config": {
+        "schema_version": 5,
+        "classic": {
+          "algorithm": "aligned-knn",
+          "source": "hlc3",
+          "neighbors": 63,
+          "max_bars_back": 2000,
+          "feature_count": 4,
+          "features": [
+            {
+              "name": "ADX",
+              "a": 20,
+              "b": 1
+            },
+            {
+              "name": "RSI",
+              "a": 18,
+              "b": 1
+            },
+            {
+              "name": "CCI",
+              "a": 16,
+              "b": 7
+            },
+            {
+              "name": "ADX",
+              "a": 21,
+              "b": 1
+            },
+            {
+              "name": "RSI",
+              "a": 9,
+              "b": 1
+            }
+          ],
+          "include_full_history": false,
+          "use_volatility_filter": false,
+          "use_regime_filter": false,
+          "use_adx_filter": true,
+          "regime_threshold": -0.1,
+          "adx_threshold": 10,
+          "use_ema_filter": true,
+          "ema_period": 110,
+          "use_sma_filter": false,
+          "sma_period": 200,
+          "use_kernel_filter": true,
+          "kernel_smoothing": true,
+          "kernel_h": 21,
+          "kernel_r": 11.75,
+          "kernel_x": 23,
+          "kernel_lag": 1,
+          "use_dynamic_exits": false,
+          "min_vote_fraction": 0,
+          "sample_stride": 4
+        },
+        "envelope_enabled": true,
+        "envelope": {
+          "h": 8,
+          "r": 8,
+          "x": 25,
+          "atr_length": 60,
+          "near": 1.5,
+          "far": 8
+        },
+        "daily": {
+          "enabled": false,
+          "h": 8,
+          "r": 8,
+          "x": 25,
+          "history_start": "2020-01-01"
+        },
+        "entry_mode": "main",
+        "pullback": {
+          "enabled": false,
+          "max_wait_bars": 24
+        },
+        "classifier": {
+          "family": "aligned-extended",
+          "feature_group": {
+            "name": "classic",
+            "features": [
+              {
+                "name": "ADX",
+                "a": 20,
+                "b": 1,
+                "normalization": "legacy",
+                "window": 0
+              },
+              {
+                "name": "RSI",
+                "a": 18,
+                "b": 1,
+                "normalization": "legacy",
+                "window": 0
+              },
+              {
+                "name": "CCI",
+                "a": 16,
+                "b": 7,
+                "normalization": "legacy",
+                "window": 0
+              },
+              {
+                "name": "ADX",
+                "a": 21,
+                "b": 1,
+                "normalization": "legacy",
+                "window": 0
+              }
+            ]
+          }
+        },
+        "exit": {
+          "policy": "signals",
+          "max_hold_bars": 4
+        },
+        "risk": {
+          "enabled": false,
+          "atr_period": 14,
+          "atr_multiplier": 2,
+          "trail": false,
+          "trail_multiplier": 2,
+          "breakeven_r": 0
+        },
+        "model": {
+          "distance": "euclidean",
+          "vote_weight": "equal",
+          "distance_epsilon": 1e-09,
+          "vote_half_life": 0,
+          "rank_half_life": 0
+        }
+      }
+    }
+  ],
+  "outer": [
+    {
+      "name": "retrospective-2025-H1",
+      "start": "2025-01-01",
+      "end": "2025-07-01",
+      "inner": [
+        {
+          "name": "2024-H1",
+          "start": "2024-01-01",
+          "end": "2024-07-01"
+        },
+        {
+          "name": "2024-H2",
+          "start": "2024-07-01",
+          "end": "2025-01-01"
+        }
+      ]
+    },
+    {
+      "name": "retrospective-2025-H2",
+      "start": "2025-07-01",
+      "end": "2026-01-01",
+      "inner": [
+        {
+          "name": "2024-H2",
+          "start": "2024-07-01",
+          "end": "2025-01-01"
+        },
+        {
+          "name": "2025-H1",
+          "start": "2025-01-01",
+          "end": "2025-07-01"
+        }
+      ]
+    }
+  ],
+  "selection": {
+    "min_trades": 30,
+    "min_positive_windows": 1,
+    "min_net_return_pct": 0,
+    "min_win_rate_pct": 40,
+    "max_drawdown_pct": 30,
+    "require_net_improvement": true,
+    "require_win_rate_improvement": false,
+    "max_drawdown_increase_pct": 0
+  },
+  "cost_multipliers": [
+    1,
+    1.5,
+    2
+  ],
+  "budget": 22,
+  "data_use": "retrospective",
+  "exposure_file": "/mnt/tb4/Code/lorentz_go/tuning/validation/exposure.json"
+}

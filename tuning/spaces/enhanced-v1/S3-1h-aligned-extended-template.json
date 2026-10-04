@@ -1,0 +1,17 @@
+{
+  "version": "enhanced-space-v1",
+  "family": "aligned-extended",
+  "stage": "S3",
+  "daily_history_start": "2020-01-01",
+  "domains": {},
+  "constraints": {
+    "min_trades": 30,
+    "min_positive_folds": 2,
+    "min_net_return_pct": 0,
+    "max_drawdown_pct": 30
+  },
+  "data_use": "development",
+  "seeds": [],
+  "parents": [],
+  "anchors": []
+}

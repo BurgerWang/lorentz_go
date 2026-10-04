@@ -1,0 +1,36 @@
+{
+  "fixtures": [
+    {
+      "name": "pine_oanda_eurusd_1d_full_history.csv",
+      "filename": "pine_oanda_eurusd_1d_full_history.csv",
+      "tolerance": 1e-6,
+      "settings": {
+        "include_full_history": true
+      }
+    },
+    {
+      "name": "pine_tastyfx_eurusd_1d_full_history.csv",
+      "filename": "pine_tastyfx_eurusd_1d_full_history.csv",
+      "tolerance": 1e-6,
+      "settings": {
+        "include_full_history": true
+      }
+    },
+    {
+      "name": "pine_coinbase_btcusd_1d_limited_history.csv",
+      "filename": "pine_coinbase_btcusd_1d_limited_history.csv",
+      "tolerance": 1e-6,
+      "settings": {
+        "include_full_history": false
+      }
+    },
+    {
+      "name": "pine_btcusd_h1_trimmed_limited_history.csv",
+      "filename": "pine_btcusd_h1_trimmed_limited_history.csv",
+      "tolerance": 1e-6,
+      "settings": {
+        "include_full_history": false
+      }
+    }
+  ]
+}

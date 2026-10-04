@@ -1,0 +1,26 @@
+{
+  "study": "historical-frozen-reference:m6-trial10-global",
+  "trial": 10,
+  "stage": "S1",
+  "family": "classic-extended",
+  "score_windows": [
+    {
+      "name": "2024-A",
+      "start": "2024-01-01",
+      "end": "2024-05-01"
+    },
+    {
+      "name": "2024-B",
+      "start": "2024-05-01",
+      "end": "2024-09-01"
+    },
+    {
+      "name": "2024-C",
+      "start": "2024-09-01",
+      "end": "2025-01-01"
+    }
+  ],
+  "parents": [],
+  "data_use": "development",
+  "config_identity": "d3c1598e89e129e8087886eae8e96b26eeed87f0215cf4ec4ed92e2eee1d5509"
+}

@@ -1,0 +1,36 @@
+# Local environments and caches
+/.venv/
+/venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Downloaded market data and local research artifacts stay on disk.
+/data/
+/results/
+/bin/
+/build/
+
+# Credentials and machine-local settings
+.env
+.env.*
+!.env.example
+!.env.template
+*.pem
+*.key
+*.p12
+*.pfx
+/credentials.json
+/.idea/
+/.vscode/
+
+# Temporary editor and runtime files
+*.swp
+*.swo
+*~
+.DS_Store
+*.log
