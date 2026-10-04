@@ -1,15 +1,15 @@
 # Project tasks
-Updated: 2026-10-04 07:58 Asia/Bangkok
+Updated: 2026-10-04 08:00 Asia/Bangkok
 
 ## Goal and completion criteria
-当前授权目标 **in-progress**：在当前项目根目录初始化 Git，提交源码／配置／测试／参考材料／文档，并通过 SSH 推送到 `git@github.com:BurgerWang/lorentz_go.git`；检查提交内容及远端历史，不强推、不覆盖远端已有工作。行情数据、约105GB本地研究结果／轨迹、环境、二进制及生成目录保留本地并排除入库，不重启任何研究。
+当前授权目标 **verified-complete**：已在原项目根目录初始化 Git、提交177个源码／配置／测试／参考材料／文档文件，并通过 SSH 推送到 `git@github.com:BurgerWang/lorentz_go.git` 的main分支。首次导入 `54c1cfb6d953e01d467b537ff243328830608845` 已与远端逐一核对，工作区干净并跟踪origin/main；独立Astra/xhigh提交边界审计关闭。行情数据、约105GB本地研究结果／轨迹、环境、二进制及生成目录保留本地并排除入库，未重启任何研究。
 
 此前研究目标 **verified-complete**：用户批准的冻结P4真实批次、独立Astra/xhigh研究核算及结果审计全部关闭。上限768attempts/920Go/1872账本；实际768attempts/296Go/616账本，0运行失败/未知，两次新进程全经济/state重放一致。仅A/B classic-original×seed17/42/73、classifier64＋management64及冻结24邻域/三成本，无扩域/补尝试/额度转移。按预定门槛六中央全部邻域拒绝，**0候选晋级**；本合同研究不进入2024–2025或其他后续批次。
 P0–P3及P4工程/完整prepare/inspect/独立工程审计已verified-complete。所有v1/P0–P3实现、数据、预算、研究产物与拒绝保留，所有冻结源码/helper/二进制/manifest不改；不扩品种周期、不实盘部署、不补搜W1，不自动进入2024–2025或其他后续阶段。此次 Git 提交／推送由2026-10-04用户单独授权。
 
 
 ## Completed
-- **Git初始化及提交边界检查 verified-complete**：原目录main／SSH origin已建立；177文本文件约4.7MiB，源码／配置／测试／依赖锁／参考署名齐备。`.gitignore`和README说明本地大体量文件留存边界；Astra/xhigh独立暂存审计关闭，无blocking。核全部index blob与工作树逐字节一致及24个冻结helper／plan身份，常见凭据扫描无候选；未重跑研究或修改冻结代码。仅新改文档／忽略规则空白检查通过；既有Pine／CSV换行和空白原样保留。实际提交与远端推送仍待完成。
+- **Git发布 verified-complete**：原目录main／SSH origin及本仓库身份已设置，首次导入54c1cfb成功推送；177文本文件约4.7MiB，源码／配置／测试／依赖锁／参考署名齐备。`.gitignore`和README说明本地大体量文件留存边界；Astra/xhigh独立审计关闭，无blocking，核全部index blob与工作树逐字节一致及24个冻结helper／plan身份，常见凭据扫描无候选。新改文档／忽略规则空白检查通过；原Pine／CSV换行和空白保留。SSH远端提交与本地HEAD相同、origin/main绑定及干净工作区已核对；无强推、删除或新增研究评价。
 - **v2 P4真实执行/核算/独立结果审计 verified-complete**：768个native COMPLETE/12块×64，920预算记录全complete，0failed/interrupted/reserved，halted=null；实际296Go/616账本。搜索217Go/434账本＋551缓存attempts；144邻域73Go/146账本；6压力4Go/24账本；预定首末两重放2Go/12账本，全经济/state一致。6中央4唯一配置、全三成本门槛通过，但0邻域合格、0研究对象。工程/实际来源/冻结身份均保持，`execution/summary.json` 顶层independent_result_audit=closed。
 - **v2 P4独立Astra/xhigh核算与审计关闭**：research独立270158关系检查/0差异，核768native/六维反馈/排序及来源、920预算行、1872报告出现次数(含缓存)/11232半年、188独立exit路径与归因文件。audit核全部616经济trace＋296state身份，10完整原始现金账户/530335事件覆盖4唯一中央两资金费/全部6种场景×成本组合及两全classifier键偏移不可行样本，6配置state210384bar；未逐一独立重算全部616现金或完整特征归一化/距离，复用冻结生产验算与闭合工程检查。无本批终点强平样本，不虚构新覆盖。`execution/{research-check.json,result-audit.json,audit-evidence/}`已保存，经济投影2c6f3dfd1aac5e4f49fb0ff9bb786cdb6f3fcfe6abd2ec58a5dd752bf80aa086保持，最终无阻断。
 - **v2 P4拒绝及解释**：A三seed均13/24<20，growth保持率62.1606%/64.2766%/64.2766%<70%；B17/42=11/24、B73=10/24，增长过线仍拒绝。A每组11不可行邻点全部DD超线；B集中在DD/正半年/最差半年/复合收益，交易数量未造成本批拒绝。A分类器neighbors82→83、CCI41→42且ATR21→14；B分类器全部保留prior-anchor，收益改善主要来自持仓48→96，不能称分类器增量。A17与A42/73参数不同，1.5/2成本经济相同但1成本不同；B17=42全参数与经济相同。A10笔pullback贡献60.42%净利、最大持仓417小时；中央收益改善不挽救邻域拒绝，不推翻旧W1结论或成为未来验证/采用依据。
@@ -45,7 +45,6 @@ P0–P3及P4工程/完整prepare/inspect/独立工程审计已verified-complete�
 - M6历史22/22请求、0搜索，RVOL连续账户基准净收益−6.5431%/93笔/DD25.6484%，1.5/2成本−12.4321%/−17.9543%，`keep_disabled`；结果及审计对账保留 `results/upgrade-v1/m6/{retrospective/summary,replay-check}.json`。这些回顾结果本轮未重算。
 
 ## Remaining
-- [ ] **Git 发布 in-progress**：配置本仓库提交身份与 SSH origin，检查暂存内容及独立审核，提交并推送 main，随后核对远端提交和工作区状态。
 - **P4本轮无未完成项**：P4结果核算及独立结果审计已关闭，0候选晋级。本冻结A/B局部改参路线拒绝，不补搜索、不扩域、不降低门槛，也不自动推进固定2024–2025回顾。下一具体动作仅在用户提出并批准新的研究目标后制定独立方案；不把本task或审计关闭当新授权。
 
 - [ ] **后续研究未授权／本版F/Q晋级条件不满足**：W1弃权0笔已违反第10.2节每半年至少15笔，后续窗口无法补回，本冻结版本不能晋级F/Q。W2–W4及其他周期仍未执行、未授权，不能称已评价或凭推导标取消；若另获批可作既定窗口诊断，不能挽救当前每窗硬门槛。下一步等待具体新研究目标/批次授权，不补搜或降低门槛。真正未来验证未开展；2020–2026-10-01现有历史按暴露回顾处理，固定冻结后需未使用完整12月及另批批准，样本不足拒绝，不承诺盈利。
@@ -72,7 +71,7 @@ P0–P3及P4工程/完整prepare/inspect/独立工程审计已verified-complete�
 - 既有业务规则保留：费用每边5bps、滑点2bps、1x复投、收盘决策下一实际开盘、资金费(entry,exit]；原M6切换仍限同Risk/Exit合同，风险不会保证未来跳空净保本。仅已实现六特征组，实际最多7维，底层15维容量不扩大授权。
 
 ## Handoff and verification
-Git当前检查点：独立审计 `audit_p0`（原Astra/xhigh）已关闭，暂存177文件；origin=`git@github.com:BurgerWang/lorentz_go.git`，main初次提交与push待执行。未运行Go评价／Optuna，研究终态保持。
+Git当前检查点：首次导入54c1cfb已通过SSH发布并核对远端，main跟踪origin/main；独立审计 `audit_p0`（Astra/xhigh）已关闭。仓库仅分发177个项目文本文件，本地data/results/bin/build/.venv及tuning缓存继续保留。此次仅增加.gitignore、更新README与task记录，没有修改策略／冻结helper或运行Go评价／Optuna。检查：定向git diff --check通过、177暂存与工作树字节一致、常见凭据扫描无候选、SSH ls-remote与HEAD一致。
 
 当前P4交接：真实执行、独立研究核算与结果审计全部verified-complete，无阻断，原生research_p4_results/audit_p0（Astra/xhigh）均已完成。session48478退出0已收取，不重启run；日志 `/tmp/lorentz-mechanism-P4-20261003.log`。RUN `results/mechanism-v2/ETHUSDT/1h/p4-prepared/`，最终交付 `execution/{summary.json,research-check.json,result-audit.json,resource.json,budget.sqlite,audit-evidence/}`；summary status=complete，independent_result_audit=closed，audit_closure明确生产pending快照已被终态审计覆盖。没有新增后续研究授权。
 
