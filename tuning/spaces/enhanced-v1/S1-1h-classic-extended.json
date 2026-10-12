@@ -1,0 +1,160 @@
+{
+  "version": "enhanced-space-v1",
+  "family": "classic-extended",
+  "stage": "S1",
+  "daily_history_start": "2020-01-01",
+  "domains": {},
+  "constraints": {
+    "min_trades": 30,
+    "min_positive_folds": 2,
+    "min_net_return_pct": 0,
+    "max_drawdown_pct": 30
+  },
+  "data_use": "development",
+  "seeds": [
+    {
+      "name": "default-classic",
+      "config": {
+        "schema_version": 5,
+        "classic": {
+          "algorithm": "original-online",
+          "source": "close",
+          "neighbors": 8,
+          "max_bars_back": 2000,
+          "feature_count": 5,
+          "features": [
+            {
+              "name": "RSI",
+              "a": 14,
+              "b": 1
+            },
+            {
+              "name": "WT",
+              "a": 10,
+              "b": 11
+            },
+            {
+              "name": "CCI",
+              "a": 20,
+              "b": 1
+            },
+            {
+              "name": "ADX",
+              "a": 20,
+              "b": 1
+            },
+            {
+              "name": "RSI",
+              "a": 9,
+              "b": 1
+            }
+          ],
+          "include_full_history": false,
+          "use_volatility_filter": true,
+          "use_regime_filter": true,
+          "use_adx_filter": false,
+          "regime_threshold": -0.1,
+          "adx_threshold": 20,
+          "use_ema_filter": false,
+          "ema_period": 200,
+          "use_sma_filter": false,
+          "sma_period": 200,
+          "use_kernel_filter": true,
+          "kernel_smoothing": false,
+          "kernel_h": 8,
+          "kernel_r": 8,
+          "kernel_x": 25,
+          "kernel_lag": 2,
+          "use_dynamic_exits": false,
+          "min_vote_fraction": 0,
+          "sample_stride": 4
+        },
+        "envelope_enabled": false,
+        "envelope": {
+          "h": 8,
+          "r": 8,
+          "x": 25,
+          "atr_length": 60,
+          "near": 1.5,
+          "far": 8
+        },
+        "daily": {
+          "enabled": false,
+          "h": 8,
+          "r": 8,
+          "x": 25,
+          "history_start": "2020-01-01"
+        },
+        "entry_mode": "main",
+        "pullback": {
+          "enabled": false,
+          "max_wait_bars": 24
+        },
+        "classifier": {
+          "family": "classic-extended",
+          "feature_group": {
+            "name": "classic",
+            "features": [
+              {
+                "name": "RSI",
+                "a": 14,
+                "b": 1,
+                "normalization": "legacy",
+                "window": 0
+              },
+              {
+                "name": "WT",
+                "a": 10,
+                "b": 11,
+                "normalization": "legacy",
+                "window": 0
+              },
+              {
+                "name": "CCI",
+                "a": 20,
+                "b": 1,
+                "normalization": "legacy",
+                "window": 0
+              },
+              {
+                "name": "ADX",
+                "a": 20,
+                "b": 1,
+                "normalization": "legacy",
+                "window": 0
+              },
+              {
+                "name": "RSI",
+                "a": 9,
+                "b": 1,
+                "normalization": "legacy",
+                "window": 0
+              }
+            ]
+          }
+        },
+        "exit": {
+          "policy": "signals",
+          "max_hold_bars": 4
+        },
+        "risk": {
+          "enabled": false,
+          "atr_period": 14,
+          "atr_multiplier": 2,
+          "trail": false,
+          "trail_multiplier": 2,
+          "breakeven_r": 0
+        },
+        "model": {
+          "distance": "lorentzian",
+          "vote_weight": "equal",
+          "distance_epsilon": 1e-09,
+          "vote_half_life": 0,
+          "rank_half_life": 0
+        }
+      }
+    }
+  ],
+  "parents": [],
+  "anchors": []
+}

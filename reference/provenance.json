@@ -1,0 +1,32 @@
+{
+  "MLExtensions2": {
+    "url": "https://pine-facade.tradingview.com/pine-facade/get/PUB%3Bd36c00024ee14427b1dd150b623962f9/2?no_4xx=true",
+    "version": "2.0",
+    "lastVersionMaj": "3.0",
+    "scriptAccess": "open_no_auth",
+    "scriptName": "MLExtensions",
+    "created": "2023-02-06T07:01:05.180589Z",
+    "updated": "2023-02-06T07:01:05.180589Z",
+    "source_path": "/tmp/lorentz_sources/MLExtensions2.pine"
+  },
+  "KernelFunctions2": {
+    "url": "https://pine-facade.tradingview.com/pine-facade/get/PUB%3B29ad3e11fa7447d3bb82247b5e09288c/2?no_4xx=true",
+    "version": "2.0",
+    "lastVersionMaj": "2.0",
+    "scriptAccess": "open_no_auth",
+    "scriptName": "KernelFunctions",
+    "created": "2022-10-28T14:33:20.496635Z",
+    "updated": "2022-10-28T14:33:20.496635Z",
+    "source_path": "/tmp/lorentz_sources/KernelFunctions2.pine"
+  },
+  "Lorentzian6": {
+    "url": "https://pine-facade.tradingview.com/pine-facade/get/PUB%3B21f5ec5277b24ce6bc8dfc3fdb3eda10/6?no_4xx=true",
+    "version": "6.0",
+    "lastVersionMaj": "6.0",
+    "scriptAccess": "open_no_auth",
+    "scriptName": "Machine Learning: Lorentzian Classification",
+    "created": "2026-06-29T16:03:00.086545Z",
+    "updated": "2026-06-29T16:03:00.086545Z",
+    "source_path": "/tmp/lorentz_sources/Lorentzian6.pine"
+  }
+}

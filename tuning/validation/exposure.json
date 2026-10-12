@@ -1,0 +1,11 @@
+{
+  "schema_version": 1,
+  "symbol": "ETHUSDT",
+  "known_cache_end": "2026-10-01T00:00:00Z",
+  "ranges": [
+    {"start": "2020-01-01T00:00:00Z", "end": "2024-01-01T00:00:00Z", "use": "exposed_history", "evidence": "downloaded/shared cache; unclear unviewed status treated as exposed"},
+    {"start": "2024-01-01T00:00:00Z", "end": "2025-01-01T00:00:00Z", "use": "development_selection", "evidence": "optuna-round1 all folds entered every objective, plus M1/M2"},
+    {"start": "2025-01-01T00:00:00Z", "end": "2026-10-01T00:00:00Z", "use": "exposed_retrospective", "evidence": "snapshot/smoke/pilot and previous inspection; unviewed subset cannot be established"}
+  ],
+  "unused_final_data_available": false
+}

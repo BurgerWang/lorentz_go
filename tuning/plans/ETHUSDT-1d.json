@@ -1,0 +1,27 @@
+{
+  "schema_version": 1,
+  "dataset_dir": "data/ETHUSDT-expanded",
+  "interval": "1d",
+  "history_start": "2019-11-27",
+  "folds": [
+    {
+      "name": "expanded-1",
+      "start": "2020-09-22",
+      "end": "2022-01-01"
+    },
+    {
+      "name": "expanded-2",
+      "start": "2022-01-01",
+      "end": "2023-07-01"
+    },
+    {
+      "name": "expanded-3",
+      "start": "2023-07-01",
+      "end": "2025-01-01"
+    }
+  ],
+  "fee_bps": 5,
+  "slippage_bps": 2,
+  "min_trades": 30,
+  "min_positive_folds": 2
+}
